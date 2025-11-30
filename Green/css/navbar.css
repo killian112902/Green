@@ -1,0 +1,45 @@
+.navbar{
+    display: flex;
+    align-content: center;
+    position: relative;
+    z-index: 3;
+}
+.nav-link{
+    color: #fff;
+}
+.navbar-nav .nav-link:hover {
+    text-decoration: underline;
+    text-decoration-color: #28a745;
+}
+
+.btn:hover {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    outline: none;
+}
+
+/* Logo sizing to keep navbar tidy */
+.navbar-brand img{
+    height: 48px;
+    width: auto;
+    display: block;
+}
+
+/* Ensure nav items align vertically with logo */
+.navbar-nav .nav-link{
+    line-height: 1.2;
+}
+
+/* Ensure modal displays above the page overlay */
+.modal{
+    z-index: 3000 !important;
+}
+.modal-backdrop{
+    z-index: 2500 !important;
+}
+
+/* Slightly larger inputs in modal for better tap targets */
+.modal .form-control-lg{
+    padding: 0.9rem 0.9rem;
+}
